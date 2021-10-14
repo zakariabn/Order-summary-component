@@ -1,0 +1,161 @@
+/*
+     - Mobile: 375px
+     - Desktop: 1440px
+*/
+:root{
+     --pale-blue: hsl(225, 100%, 94%);
+     --bright-blue: hsl(245, 75%, 52%);
+     --very-pale-blue: hsl(225, 100%, 98%);
+     --desaturated-blue: hsl(224, 23%, 55%);
+     --dark-blue: hsl(223, 47%, 23%);
+
+     --font: 'Red Hat Display', sans-serif;
+     --font-wmin: 500;
+     --font-wmid: 700;
+     --font-wmax: 900;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+img {
+     width: 100%;
+}
+
+body {
+     font-family: var(--font);
+     background-color:var(--pale-blue);
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+}
+
+.bg-image {
+     background-image: url("./images/pattern-background-mobile.svg");
+     background-repeat: no-repeat;
+     background-position: center;
+     height: 400px;
+     position: absolute;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+     z-index: -1;
+
+}
+.container { 
+     background-color: white;
+     width: 80vw;
+     margin: 10px auto 10px;
+     border-radius: 18px 18px 0px 0px;
+}
+.hero-img {
+     border-radius: 18px 18px 0px 0px;
+}
+
+h1 {
+     font-family: var(--font);
+     font-weight: var(--font-wmax);
+     font-size: 25px;
+     margin: 20px auto;
+     color: var(--dark-blue);
+}
+
+.disc {
+     font-weight: 500;
+     color: var(--desaturated-blue);
+     margin: 20px;
+     font-size: 16px;
+}
+
+.container-2 {
+     display: flex;
+     justify-content:space-between;
+     align-items: center;
+     background-color: var(--very-pale-blue);
+     width: 90%;
+     margin: auto;
+     border-radius: 18px;
+     overflow-x: auto;
+     padding: 0px 10px;
+     
+}
+
+.container-2 .item-1 {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     flex-basis: auto;
+     flex-wrap: nowrap;
+}
+
+
+.pricing {
+     margin: 15px 30px;
+}
+
+.music-icon {
+     width: 40px;
+}
+
+.btn {
+     font-family: var(--font);
+     border: none;
+     cursor: pointer;
+     font-weight: var(--font-wmid);
+}
+.btn-change {
+     color: var(--bright-blue);
+     border: none;
+     background-color: transparent;
+     text-decoration: underline;
+}
+
+.secundry-btn {
+     padding: 20px 0px;
+
+}
+
+.btn-payment {
+     width: 90%;
+     padding: 10px;
+     border-radius: 10px;
+     color: white;
+     background-color: var(--bright-blue)
+}
+
+.btn-c-order {
+     margin-top: 20px;
+     background-color: transparent;
+
+}
+
+
+
+@media (min-width: 768px) {
+     .bg-image {
+          background-image: url("./images/pattern-background-desktop.svg");
+          background-size: cover;
+          background-position: center;
+          height: 50vh;   
+     }
+
+     .container {
+     width: 500px;
+     }
+
+}
+
+/*Attribution*/
+.attribution {
+     font-size: 11px; text-align: center;
+}     
+.attribution a {
+     color: hsl(228, 45%, 44%);
+}
